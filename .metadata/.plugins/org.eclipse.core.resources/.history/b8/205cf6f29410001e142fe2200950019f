@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	p {
+	background-color :  #0000ff;
+	color : white;
+	font-size:10pt;
+	}
+	
+	#title {
+	color :red;
+	font-size: 50%;
+	}
+	
+	.content {
+	background-color : green;
+	color: rgb(255,255,0)
+	}
+	
+	.base{
+	border : 1px solid black;
+	padding:10px;
+	margin:20px;
+	}
+</style>
+</head>
+<body>
+
+<!-- 
+	CSS Cascading Style Sheet
+	문자의 컬러, 종류, 형태등을 지정
+	배ㅔ경화면처리, 이미지, 특수처리
+	테두리(border) 설정
+	
+	inline; tag안에 property를 기입
+	internal : head 태그에 설정
+ -->
+ 
+ <p style="background-color:#0000ff">Hello CSS</p>
+ <p> 파월, 연내 두번 더 금리인상 시사...</p>
+ <p>물가 2%까지 갈 길 멀다 </p>
+ 
+ <h2 id="title">앞으로 더 완화된 속도로 금리를 인상하는 게</h2>
+ <h3 class = "content">더 타당할 수 있다.</h3>
+  <div class = "content">더 타당 안 할 수도 있다.</div>
+<br>
+<div class= "base">그는 가계와 기업이 돈을 빌리는게 더 어려워지면서 어려워지면서어려워지면서 경제가 <br> "맞바람"을 맞고 있다함</div>
+</body>
+</html>

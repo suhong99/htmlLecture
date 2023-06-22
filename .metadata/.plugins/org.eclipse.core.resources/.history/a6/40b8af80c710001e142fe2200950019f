@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+
+<h1>자기소개</h1>
+
+<p class="center">
+	<img alt="자화상이미지"  src="./imgae/img.png">
+</p>
+<p class="border">
+안녕하세요.<br>
+좋아하는 음식은 <strong>스파게티</strong>입니다.<br>
+</p>
+</body>
+</html>

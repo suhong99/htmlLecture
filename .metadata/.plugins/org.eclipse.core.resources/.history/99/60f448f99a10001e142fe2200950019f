@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+background-color : white;
+background-image: url("picture")
+}
+</style>
+</head>
+<body>
+<img alt="dd" src="개죽이.jpg">
+
+
+</body>
+</html>

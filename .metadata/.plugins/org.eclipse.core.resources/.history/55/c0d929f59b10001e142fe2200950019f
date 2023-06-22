@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<p>Hello CSS</p>
+<p class="upper">Hello CSS Html upper</p>
+<p class="lower">Hello CSS Html lower</p>
+<p class="capital">Hello CSS Html capital</p>
+
+</body>
+</html>

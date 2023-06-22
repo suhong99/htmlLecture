@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div align="center">
+	<div id="fullscreen">
+		<div id="left">
+			<div id="leftup"></div>
+			<div id="leftdown"></div>
+		</div>	
+		<div class="right">
+			<div class="rightup"></div>
+			<div class="rightdown"></div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

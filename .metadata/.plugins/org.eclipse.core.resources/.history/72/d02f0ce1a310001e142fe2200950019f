@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Table CSS</h1>
+<table>
+	<thead>
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+			<th>나이</th>
+		</tr>
+		<tbody>
+			<tr>
+				<td class="center">1</td><td>홍길동</td><td>24</td>
+			</tr>
+			<tr>
+				<td class="center">2</td><td>성춘향</td><td>16</td>
+			</tr>
+			<tr>
+				<td class="center">3</td><td>일지매</td><td>22</td>
+			</tr>
+		</tbody>
+	</thead>
+</table>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 주석문 Ctrl + Shift+/ -->
+<!-- 
+	HTML -> Hyper Text Markup Language
+			웹에 띄우는 언어		
+		Tag로 구성되어 있따
+		<태그명>텍스트 </태그명>
+		<태그명 속성(attribute)=값>택스트</태그명>
+		<태그명 속성(attribute)="특성 : 값">택스트</태그명>
+		URL -> 접속주소 Uniform Resource Locator
+ -->
+ 
+ <!-- heading  -->
+  <h1> 제목입니다</h1>
+  <h2> 제목입니다</h2>
+  <h3> 제목입니다</h3>
+  <h4> 제목입니다</h4>
+  <h5> 제목입니다</h5>
+  <h6> 제목입니다</h6>
+ <!--  줄바꿈 -->
+ <br> 
+ <pre>
+ 입력한 모양 그대로 나옴
+ </pre>
+ 
+ <!-- 
+ 	Attribute(속성)
+ 		<태그명 속성1명="값" 속성2명 = "값"></태그명>
+ 	Property(특성)
+ 		<xormaud thrtjd1aud="프로퍼티1:값;프로퍼티2:값"></태그명>	
+  -->
+ <h1 style="color : red; background-color:black">Hello Html h1태그</h1>
+  <h1 style="color : #ffffff; background-color:0000ff">Hello Html h1태그</h1>
+ <h3 id = "" class "" name = "" className="">html h3</h3>
+ <p> 한잔은 떠나간 너를 위해서 한잔은 영원할 것 같았떤 우리의 사랑을 위해서 </p>
+</body>
+</html>

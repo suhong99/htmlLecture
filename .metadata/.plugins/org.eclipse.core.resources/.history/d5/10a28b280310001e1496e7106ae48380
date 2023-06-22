@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	list : 목록
+	
+	ul : unordered(순서없는) list
+	ol : ordered(순서있는) list
+	
+ -->
+ 
+<ul>
+ 	<li>강아지</li>
+ 	<li>고양이</li>
+ 	<li>토끼</li>
+</ul>	
+
+<ul style="list-style-type:disc">
+ 	<li>강아지</li>
+ 	<li>고양이</li>
+ 	<li>토끼</li>
+</ul>	
+
+<ol type="I">
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ol>
+<ol type="3">  <!-- 안됨  -->
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ol>
+<ol type = "I" start="3">
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ol>
+
+<ul type="I">
+	<li>coffee
+	<ol>
+	<li>블랙</li>
+	<li>밀크</li>
+	</ol></li>
+	<li>tea</li>
+	<li>milk</li>
+</ul>
+
+</body>
+</html>

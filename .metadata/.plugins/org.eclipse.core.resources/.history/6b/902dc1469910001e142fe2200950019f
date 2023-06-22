@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+.cm{	
+font-size : 1cm;
+}
+
+.mm {
+	font-size : 1mm;
+}
+.inch {
+	font-size : 1in;
+}
+.pt {
+	font-size : 1pt;
+}
+.pc {
+	font-size : 1pc;
+}
+.px{
+	font-size : 18px;
+}
+</style>
+</head>
+<body>
+	<p class="cm">font size 1cm</p>
+	<p class="mm">font size 1mm</p>
+	<p class="inch">font size 1inch == 2.54cm</p>
+	<p class="pt">font size 1point</p>
+	<p class="pc">font size 1pc </p> <!-- 1파이카 == 12pt -->
+	<p class="px">font size 18px</p>
+</body>
+</html>

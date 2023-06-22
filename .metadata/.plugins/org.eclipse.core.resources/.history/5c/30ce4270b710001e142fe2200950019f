@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#container {
+		margin:auto;
+		width:600px;
+		height:600px;
+		display:flex;
+		flex-direction: row;
+	}
+	.smallContainer{
+		width:200px;
+		height:100%;
+	}
+	#oneTop{
+		background-color: red;
+		width:100%;
+		height:500px;	
+	}
+</style>
+</head>
+<body>
+	<div id ="container">
+		<div class="smallContainer">
+			<div id="oneTop"></div>
+			<div id="oneBottom"></div>
+		</div>
+		<div class="smallContainer">
+			<div id="twoTop"></div>
+			<div id="twoBottom"></div>
+		</div>
+		<div class="smallContainer">
+			<div id="threeTop"></div>
+			<div id="threeBottom"></div>
+		</div>
+	</div>
+</body>
+</html>

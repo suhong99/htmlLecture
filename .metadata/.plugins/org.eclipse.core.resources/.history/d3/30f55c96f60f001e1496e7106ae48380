@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body bgcolor="gray">
+
+<!-- 주석문 Ctrl + Shift+/ -->
+<!-- 
+	HTML -> Hyper Text Markup Language
+			웹에 띄우는 언어		
+		Tag로 구성되어 있따
+		<태그명>텍스트 </태그명>
+		<태그명 속성(attribute)=값>택스트</태그명>
+		<태그명 속성(attribute)="특성 : 값">택스트</태그명>
+		URL -> 접속주소 Uniform Resource Locator
+ -->
+ 
+ <!-- heading  -->
+  <h1> 제목입니다</h1>
+  <h2> 제목입니다</h2>
+  <h3> 제목입니다</h3>
+  <h4> 제목입니다</h4>
+  <h5> 제목입니다</h5>
+  <h6> 제목입니다</h6>
+ <!--  줄바꿈 -->
+ <br> 
+ <pre>
+ 입력한 모양 그대로 나옴
+ </pre>
+ 
+ <!-- 
+ 	Attribute(속성)
+ 		<태그명 속성1명="값" 속성2명 = "값"></태그명>
+ 	Property(특성)
+ 		<xormaud thrtjd1aud="프로퍼티1:값;프로퍼티2:값"></태그명>	
+  -->
+ <h1 style="color : red; background-color:black">Hello Html h1태그</h1>
+  <h1 style="color : #ffffff; background-color:0000ff">Hello Html h1태그</h1>
+ <h3 id = "" class "" name = "" className="">html h3</h3>
+ <p> 한잔은 떠나간 <i>너를 위해서</i> 한잔은 <b>영원할</b> 것 같았떤 우리의 사랑을 위해서 </p>
+ <font size="1" color="#00ff00">폰트 크기 1</font>
+ 
+ <pre>
+ 2019. 4. 2. — 오늘은 이클립스에  <font size="10" color="#0000ff">node.js 개발환경을</font> 설정하는 방법을 알아보겠습니다. 
+ 아래 절차대로 따라하시면 node.js 개발할 수 있는 환경세팅은 금방 하실 수 
+ </pre>
+ 
+ <div align="center" style=" border :solid; border-color : #0000ff; margin-left:20px; padding-left:10px; background-color: blue;color:white;">
+	<h1>ㅎㅇ</h1>
+	<h2>감자</h2>
+	<h3>고구마</h3>
+ </div>
+ 
+ <!-- anchor(=link) : 이동  -->
+ <a href = "http://www.daum.net">Daum사이트로 이동</a> 
+ <!-- World  Wide Web -->
+ <br>
+ <a href="test.html" target="_self">현재창에서 test.html</a>
+  <a href="test.html" target="_blank">새창에서 test.html</a>
+ <!--
+ 		image 종류
+ 					jpg(jpeg) 	bmp		gif	 	png 	tiff	tag 
+ 		용량(적은)		1			6		2		3		4		5
+ 		압출률		1			0(안됨)
+ 		활용도		1					3		2				4
+   -->
+  
+  <img alt="이미지없음" width="80" height="140" src="kakao.jpg">
+  <br>
+  <img alt="이미지없음" width="80" height="140" src="kakao1.jpg">
+  
+  <img alt="이미지없음" src="kakao.jpg">
+  
+   
+   
+</body>
+</html>

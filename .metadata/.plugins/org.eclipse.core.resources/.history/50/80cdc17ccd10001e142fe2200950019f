@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+	<h1>설문조사</h1>
+	<div>이름 : <input placeholder="이름을 기입하세요."/></div>
+	<hr>
+	<p><b>질문 (1)</b>영어회화에 관심이 있습니까?</p>
+	<div>
+		<input type="radio" name="english">예 
+		<input type="radio" name="english">둘다 말할 수 없음 
+		<input type="radio" name="english"> 아니오
+	</div>
+	
+</form>
+</body>
+</html>

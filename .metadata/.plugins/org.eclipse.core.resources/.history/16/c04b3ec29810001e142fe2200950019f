@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+.cm{	
+font-size : 1cm;
+}
+
+.mm {
+	font-size : 1mm;
+}
+.inch {
+	font-size : 1in;
+}
+</style>
+</head>
+<body>
+	<p class="cm">font size 1cm</p>
+	<p class="mm">font size 1mm</p>
+	<p class="inch">font size 1inch == 2.54cm</p>
+	
+</body>
+</html>

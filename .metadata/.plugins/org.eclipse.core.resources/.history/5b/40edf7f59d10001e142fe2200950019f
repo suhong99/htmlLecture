@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style type="text/css">
+	body{
+		color : rgb(24,48,34);
+		text-align:center;	
+	}
+	.upper{
+		text-transform: uppercase;
+	}
+	.lower {
+		text-transform : lowercase;
+	}
+	.capital{
+		text-transform : capitalize;
+	}
+	a{
+	text-decoration:none;
+	}
+	a:link{
+	color : #ff0000;
+	}
+	a:visited{
+	color : #000000;
+	}
+	a:hover {
+		text-decoration:underline;
+	}
+</style>
+<body>
+
+<p>Hello CSS</p>
+<p class="upper">Hello CSS Html upper</p>
+<p class="lower">Hello CSS Html lower</p>
+<p class="capital">Hello CSS Html capital</p>
+
+<a href="http://www.google.com">Google home Page</a>
+<br>
+<a href="http://www.daum.net">Daum home Page</a>
+
+</body>
+</html>

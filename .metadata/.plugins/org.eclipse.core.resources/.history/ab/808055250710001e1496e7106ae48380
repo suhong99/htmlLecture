@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	list : 목록
+	
+	ul : unordered(순서없는) list
+	ol : ordered(순서있는) list
+	
+ -->
+ 
+<ul>
+ 	<li>강아지</li>
+ 	<li>고양이</li>
+ 	<li>토끼</li>
+</ul>	
+
+<ul style="list-style-type:disc">
+ 	<li>강아지</li>
+ 	<li>고양이</li>
+ 	<li>토끼</li>
+</ul>	
+
+<ol type="I">
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ol>
+<ol type="3">  <!-- 안됨  -->
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ol>
+<ol type = "I" start="3">
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ol>
+
+<ul type="I">
+	<li>coffee
+	<ol>
+		<li>블랙</li>
+		<li>밀크</li>
+		</ol>
+	</li>
+	<li>tea</li>
+	<li>milk</li>
+</ul>
+
+<hr>
+
+<!-- 
+	table : column(열) , row(행)
+	<table>
+		<col width="">
+		<thead>
+			<tr>
+				<th></th>
+				<td></td>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+ -->
+ 
+ <table>
+ 	<thead>
+ 	<tr>
+ 		<th>번호</th>
+	 	<th>이름</th>
+	 	<th>나이</th>
+ 		<th>주소</th>
+ 	</tr>
+ 	</thead>
+ 	<tbody>
+	 	<tr>
+	 		<th>1</th>
+		 	<th>홍길동</th>
+		 	<th>24</th>
+	 		<th>부산시</th>
+	 	</tr>
+	 	<tr>
+	 		<th>2</th>
+		 	<th>성춘향</th>
+		 	<th>16</th>
+	 		<th>남원시</th>
+	 	</tr>
+ 	</tbody>
+ </table>
+ <br> 
+ <div align="center">
+ <table border="1">
+ <col width="50"> <col width="150">
+  <col width="100">
+  <col width="100">
+ 
+ 	<thead>
+ 	<tr>
+ 		<th>번호</th>
+	 	<th>이름</th>
+	 	<th colspan="2">전화번호</th>
+ 	</tr>
+ 	</thead>
+ 	<tbody>
+	 	<tr>
+	 		<th align="center">1</th>
+		 	<th>홍길동</th>
+		 	<th>5243-2323</th>
+	 		<th>5243-2323</th>
+	 	</tr>
+	 	<tr>
+	 		<th align="center">2</th>
+		 	<th>성춘향</th>
+		 	<th>5243-2323</th>
+	 		<th>5243-3232</th>
+	 	</tr>
+ 	</tbody>
+ </table>
+ </div>
+ <br></br>
+ <table border="1">
+ <tr>
+	 <th>번호</th>
+	 <td>1</td>
+ </tr>
+  <tr>
+	 <th>이름</th>
+	 <td>홍길동</td>
+ </tr>
+  <tr>
+	 <th rowspan="2">전화번호</th>
+	 <td>123</td>
+ </tr>
+  <tr>
+	 <td>234</td>
+ </tr>
+ </table>
+ 
+ <br>
+ <hr>
+ <br>
+ 
+ <!-- iframe : web안의 web  -->
+ <iframe src="NewFile.html" width="300" height="300"></iframe>
+  <iframe src="https://www.cgv.co.kr/" width="500" height="500"></iframe>
+ 
+ <br><br>
+ 
+</body>
+</html>
