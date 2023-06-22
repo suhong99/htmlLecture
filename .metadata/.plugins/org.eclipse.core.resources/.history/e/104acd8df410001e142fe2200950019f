@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <script type="text/javascript">
-	document.getElementById("id").innerHTML="Hello";
+	document.getElementById("id").innerHTML="Hello";\
 </script>
 <body>
 
