@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+  </head>
+  <body>
+    <!-- 
+    Link를 통해서 값을 전달
+    Html
+    <a href="">
+    <form action="" name=>
+
+    JavaScript
+    location.href="" 
+ -->
+    <form action="NewFile.jsp">
+      <input type="hidden" name="number" value="12345" />
+      이름:<input type="text" name="name" />
+      <br />
+      나이:<input type="text" name="age" />
+      <br />
+      <input type="submit" value="전송" />
+    </form>
+
+    <br /><br />
+    <a href="NewFile.jsp?name=성춘향&age=16&number=24680">NewFile.jsp</a>
+    <br /><br />
+
+    <!-- Java script -->
+    이름 : <input type="text" id="name" /><br />
+    나이:<input type="text" id="age" /><br />
+    <button type="button" onclick="func()">이동</button>
+
+    <script type="text/javascript">
+      function func() {
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        if (name.trim() == "") {
+          alert("이름을 입력해주세요");
+        }
+        location.href = "NewFIle.jsp?name" + name + "&age=" + age;
+      }
+    </script>
+  </body>
+</html>

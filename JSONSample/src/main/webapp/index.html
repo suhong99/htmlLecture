@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--  
+		JSON : Java Script Object Notation
+									표기법
+		(key : valeu)
+		
+		let man = ["홍길동", 24,"부산시"]			
+								
+-->
+<p id="demo"></p>
+<script type="text/javascript">
+let str = '{"name":"홍길동","age":24,"address":"부산시"}';
+// let json = {"name":"홍길동","age":24,"address":"부산시"};
+
+let strJson = JSON.parse(str); //String -> json (parsing)
+console.log(strJson);
+console.log(json+"json")
+let strBack=JSON.stringify(strJson);
+console.log(strBack+"다시 문자로")
+// alert(str); // 문자열
+
+// alert(json.name); // JSON
+/* 	let man = ["홍길동",24,true];
+	console.log(man[0]);
+	*/
+	
+	let json = [
+		{
+			"name":"홍길동",
+			"age":24,
+			"height":172.1
+		},
+		{
+			"name":"홍길은",
+			"age":25,
+			"height":172.6
+		},{
+			"name":"홍길금",
+			"age":26,
+			"height":172.4
+		}
+	];
+	
+	document.getElementByid("demo").innerHTML = json[1].name;
+ </script>
+</body>
+</html>

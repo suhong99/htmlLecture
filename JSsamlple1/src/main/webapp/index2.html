@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+  </head>
+  <body>
+    <!-- 
+        tag :
+                일반태그(출력) : h1~h6 ,p, pre
+                입출력 : input, textarea
+                event : button, select
+
+     -->
+
+    <p id="demo">단락 태그</p>
+    <input type="text" id="text" size="20" value="초기값" placeholder="입력" />
+    <br />
+    <input type="button" onclick="btnfunc()" value="버튼" />
+    <button type="button" onclick="btnfunc()">버튼</button>
+    <script type="text/javascript">
+      //alert("클릭")
+      document.getElementById("demo").innerText = "버튼클릭";
+      document.getElementById("text").value = "button click!";
+    </script>
+
+    <br /><br />
+    <!-- 함수 -->
+    <button type="button" onclick="func()">클릭</button>
+    <script type="text/javascript">
+      function func() {
+        alert("func()");
+      }
+
+      function multi(n1, n2) {
+        return n1 * n2;
+      }
+      let result = multi(12, 34);
+      console.log(result);
+    </script>
+    <br /><br />
+    <button type="button" onclick="btnclick('one')">버튼 one</button>
+    <button type="button" onclick="btnclick('two')">버튼 twp</button>
+    <button type="button" onclick="btnclick('three')">버튼 three</button>
+    <script type="text/javascript">
+      function btnclick(num) {
+        if (num == "one") {
+          console.log("원클릭");
+        } else if (num == "two") {
+          console.log("투클릭");
+        } else {
+          console.log("스리클릭");
+        }
+      }
+    </script>
+  </body>
+</html>

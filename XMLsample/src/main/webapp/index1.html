@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p id ="demo"></p>
+	<button type="button" onclick="loadText()">내용보기</button>
+	
+	<script type="text/javascript">
+	 function loadText(){
+		 //비동기 통신 = Ajax
+		 let xhttp = new XMLHttpRequest();
+		 xhttp.onreadystatechange=function(){
+			 console.log(this.status);
+			 console.log(this.readyState);
+			 console.log(this.responseText);
+			 if(this.readyState=4&&this.status==200){
+				 document.getElementById("demo").innerHTML=this.responseText;
+			 }
+		 }
+		 xhttp.open("GET","http://localhost:9000/XMLsample/text.txt",true);
+		 console.log("xhttp.open");
+		 xhttp.send();
+		 console.log("xhttp.send");
+
+	 }
+	 /*
+	 	status :
+	 		0 : 준비중
+	 		200 : success
+	 		403 : 접근금지
+	 		404 : 없음 not found
+	 		500 : 구문에러
+	 		
+	 	readyState
+	 	1 -> loading 중...
+	 	2 -> loading 완료
+	 	3 -> server 처리중
+	 	4 -> server 처리완료
+	 */
+	 
+	</script>
+	
+	
+</body>
+</html>

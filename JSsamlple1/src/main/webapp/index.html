@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+  </head>
+  <body>
+    <!--
+	Java Script(Front-end 스크립트)
+	목적 : Web resource(버튼, input,select..) 에 접근하고 값의 처리를 위한 스크립트
+		Tag(input,button..)에 접근하여 데이터를 취득, 수정 , 검색
+		compile을 하지 않는다 -> 처리속도가 빠르다]
+		예) 회원가입 - > 빈칸을 조사, id의 글자의 갯수나 종류등을 조사, password 검사
+			CSS의 제어, timer 설정하고 특수효과의 구현도 가능
+			
+		JasvaScript -> Jquery(함수) -> angular.js -> react.js -> vue.js
+						ajax						axios
+						
+		variable(변수)
+		function
+		class
+		
+		Attribute(속성)
+		Property(특정)
+		
+		id		:JavaScript의 접근 목적. 1개만 유효
+		class	: CSS를 설정. 다수
+		name	: 값을 전달(DB접근). 다수
+		
+  -->
+
+    <p id="demo">hi java script</p>
+    <p id="demo">hi java script2</p>
+    
+    <p class="cls">Hello</p>
+    <p class="cls">JavaScript</p>
+
+    <script type="text/javascript">
+      // 한줄
+      /* 범위  */
+      console.log("Java Script가 실행되었습니다.");
+      // alert('자바스크립트 실행!');
+      //window.alert
+      var demo = document.getElementById("demo");
+		console.log(demo);
+      document.getElementById("demo").innerHTML = "안녕 자바스크리븥";
+      demo = document.getElementById("demo").innerText;
+      document.getElementById("demo").innerText = "안녕 자바스크립트";
+
+      console.log(demo);
+      var arrcls = document.getElementsByClassName("cls");
+      console.log(arrcls[0].innerHTML);
+      console.log(arrcls[1].innerHTML);
+
+      var arrP = document.getElementsByTagName("p");
+      for (i = 0; i < arrP.length; i++) {
+        console.log(arrP[i].innerText);
+      }
+      //
+    </script>
+  </body>
+</html>

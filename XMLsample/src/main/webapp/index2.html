@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p id=demo></p>
+<script type="text/javascript">
+	console.log("시작")
+	let xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange= function(){
+		if(this.readyState == 4 && this.status==200){
+			console.log("readyState : "+ this.readyState);
+			//성공적으로 처리완료
+			nodeValue(xhttp);
+		}
+	}
+	xhttp.open("GET","client.xml",true);
+	xhttp.send();
+	
+	function nodeValue(){
+		console.log("함수실행되나")
+		let num,  name;
+		let xmlDoc;
+		let txt, nametxt;
+		txt = nametxt="";
+		
+		xmlDoc = xhttp.responseXML; // file-> xml로 파싱(parsing)
+		console.log(xmlDoc);
+		
+		num =xmlDoc.getElementsByTagName("번호");
+		name =xmlDoc.getElementsByTagName("이름");
+		
+		num[0].childNodes[0].nodeValue;
+		let allDatas = "";
+		
+		for(i=0;i<num.length;i++){
+/* 			txt += num[i].childNodes[0].nodeValue+"<br>";
+			nametxt += name[i].childNodes[0].nodeValue+"<br>";
+ */			
+			allDatas += num[i].childNodes[0].nodeValue+"";
+ 			allDatas += name[i].childNodes[0].nodeValue+"<br>";
+		}
+		document.getElementById("demo").innerHTML= allDatas;
+		
+	}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+  </head>
+  <body>
+    variable(변수)
+    <br />
+    <p id="demo"></p>
+    <script type="text/javascript">
+      //Integer, Double, String, Character, Boolean, Array , Class
+      /*
+            MyClass mycls = new MyClass();
+            YouClass ycls = new YouClass();
+
+            Object obj = new MyClass();
+            Object obj = new YouClass();
+        */
+      let num = 123;
+      console.log(num);
+
+      // Array -- obejct
+
+      /* 자바에선
+            int arr[] = new int[5];
+            int arr[] = {1,2,3,4,5};
+      */
+      //   let cars = []; // 초기화
+      //   cars = new Array(3);
+      let cars = ["Benz", "BMW", "Saab"];
+      for (let i = 0; i < cars.length; i++) {
+        console.log(cars[i]);
+      }
+
+      for (index in cars) {
+        console.log(index); // 인덱스가 넘어옴
+      }
+
+      //람다식
+      cars.forEach((Element) => console.log(Element));
+
+      //obejct= class
+      let obj = {
+        firstname: "길동",
+        lastname: "홍",
+        age: 24,
+        printing: function () {
+          console.log("printing 함수 호출");
+        },
+      };
+
+      console.log(obj.firstname);
+      obj.printing();
+      class Person {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+        print() {
+          console.log(this.name + " " + this.age);
+        }
+      }
+      let per = new Person("성춘향", 16);
+      console.log(per.name);
+    </script>
+  </body>
+</html>

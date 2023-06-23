@@ -1,0 +1,33 @@
+[
+	{
+		"title":"괴물",
+		"score" :9.9,
+		"openday" : "2010-02-02",
+		"director": "봉준호"	
+	},
+	{
+		"title":"기생충",
+		"score" :9.9,
+		"openday" : "2015-02-02",
+		"director": "봉준호"	
+	},
+	{
+		"title":"브로커",
+		"score" :9.9,
+		"openday" : "2022-02-02",
+		"director": "아이유"	
+	},
+	{	
+		"title":"남자가사랑할때",
+		"score" :9.9,
+		"openday" : "2020-05-02",
+		"director": "황정민"	
+	},
+	
+	{
+		"title":"신과함께",
+		"score" :9.9,
+		"openday" : "2020-02-02",
+		"director": "주호민"	
+	}
+]

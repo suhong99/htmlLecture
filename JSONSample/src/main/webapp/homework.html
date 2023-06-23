@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="demo"></div>
+<!--  
+	movie.json
+			좋아하는 영화 5개
+				제목: title
+				평점 : score
+				개봉일 : openday
+				감독 : director
+			
+			json불러오기
+			Parsing -> json
+			시각화 -> table로
+	
+		월요일날 Jsoup -> 크롤링 배우기
+-->
+<script type="text/javascript">
+let xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange= function(){
+		if(xhttp.readyState==4 && xhttp.status==200){
+			jsonFunc(xhttp)
+		}
+	}
+	xhttp.open("GET","movie.json",true);
+	xhttp.send();
+	
+	function jsonFunc(xhttp){
+	let json = JSON.parse(xhttp.responseText);
+
+	console.log(json)
+	let table="<table border='1'><thead><tr><th>제목</th><th>평점</th><th>개봉일</th><th>감독</th></tr></thead><tbody>"
+	
+
+	for(i=0;i<json.length;i++){
+		table += "<tr>"+"<th>"+json[i].title+"</th>"
+				+"<th>"+json[i].score+"</th>"
+				+"<th>"+json[i].openday+"</th>"
+				+"<th>"+json[i].director+"</th>"
+				+"</tr>"
+	}
+	document.getElementById("demo").innerHTML =table+ "<tbody/></table>"
+	;
+}
+</script>
+</body>
+</html>
